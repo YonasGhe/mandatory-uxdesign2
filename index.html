@@ -2,17 +2,22 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>Quiz Master</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
   </head>
   <body>
-    <div class="tob-bar">
-      <button class="material-icons button tob-bar__navigation-icon">menu</button>
-      <h1 class="top-bar__title" role="presentation">QuIz Master</h1>
-    </div>
+    <header class="top-bar">
+      <button class="material-icons button top-bar__navigation-icon">menu</button>
+      <h1 class="top-bar__title" role="presentation">Quiz Master</h1>
+    </header>
+
     <aside class="SideNav">
       <button class="button SideNav__game" id="start">Game screen</button>
       <button class="button SideNav__stats" id="stats">Stats</button>
-      <button class="button SideNav__about">About this app</button>
+      <button class="button SideNav__about" id="about">About this app</button>
     </aside>
 
     <button type="button" class="button main__button main__button--visible">START QUIZ</button>
@@ -20,7 +25,7 @@
     <main class="main" role="presentation" aria-labelledby="may-main-title">
       <h2 class="main__title" id="my-main-title"></h2>
       <div class="main__questions-container"></div>
-      <button type="button" class"button main__submit">Submit!</button>
+      <button type="button" class="button main__submit">Submit!</button>
     </main>
 
     <div class="dialog" role="dialog" aria-modal="true" aria-labelledby="my-dialog-title" aria-describeby="my-dialog-content">
